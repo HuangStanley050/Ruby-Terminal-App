@@ -23,9 +23,9 @@ def saveJoke
   time = d.strftime('%a %d %b %Y')
   randomString = rand(36**20).to_s(36)
 
-  filenName = time
-  puts fileName
+  fileName = randomString + '-' + time + '.chuck'
 
+  # puts fileName
   Dir.mkdir(directoryName) unless File.exist?(directoryName)
 
   save_string = 'chuck_norris_jokes/' + fileName
