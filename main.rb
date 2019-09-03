@@ -4,6 +4,11 @@ require_relative 'displayTitle.rb'
 require_relative 'printMenu.rb'
 require_relative 'getUserInput.rb'
 
+userInput = nil
 displayTitle
-displayMenu
-getUserInput
+
+while userInput != 3
+
+  displayMenu
+  userInput = getUserInput
+end
