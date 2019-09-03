@@ -4,6 +4,6 @@ require 'tty'
 
 def getUserInput
   prompt = TTY::Prompt.new
-  choices = { "Get a random Joke": 1, "Save random joke to a file": 2, "Select a category of joke": 3, "Exit": 4 }
+  choices = { "Get a random Joke": 1, "Save random joke to a file": 2, "Exit": 3 }
   prompt.enum_select('Select an editor?', choices)
 end
