@@ -16,7 +16,8 @@ while userInput != 3
   case userInput
   when 1
     # do api call to get one random joke
-    puts 'get joke'
+    # puts 'get joke'
+    get_joke
   when 2
     # do api call and then save to a file in current directory
     puts 'save joke to a file'
