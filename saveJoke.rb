@@ -23,7 +23,6 @@ def saveJoke
 
   fileName = randomString + '-' + time + '.chuck'
 
-  # puts fileName
   Dir.mkdir(directoryName) unless File.exist?(directoryName)
 
   save_string = 'chuck_norris_jokes/' + fileName
