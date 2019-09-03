@@ -24,7 +24,7 @@ def get_joke
 
   # puts hash['value']
   # puts httpStatus
-  puts hash['value'].red
+  hash['value'].red
 end
 
 # get_joke
