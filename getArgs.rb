@@ -5,5 +5,3 @@ def get_arguments
     puts arg
   end
 end
-
-get_arguments

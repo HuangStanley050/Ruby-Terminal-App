@@ -2,10 +2,8 @@
 
 require 'httparty'
 require 'fileutils'
-
 require 'date'
-
-CHUCK_NORRIS_URL = 'https://api.chucknorris.io/jokes/random'
+require_relative 'api.rb'
 
 def saveJoke
   response = nil

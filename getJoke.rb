@@ -3,8 +3,7 @@
 require 'httparty'
 require 'tty'
 require 'colorize'
-
-CHUCK_NORRIS_URL = 'https://api.chucknorris.io/jokes/random'
+require_relative 'api.rb'
 
 def get_joke
   response = nil
