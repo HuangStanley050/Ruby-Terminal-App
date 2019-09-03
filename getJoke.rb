@@ -25,4 +25,4 @@ def get_joke
   puts httpStatus
 end
 
-get_joke
+# get_joke
