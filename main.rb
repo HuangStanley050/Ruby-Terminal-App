@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+# main function to run the app if an argument is provided at the CLI the program runs once then quits
+# if the argument is not provided user will inside the app with a menu and a loop that runs until user quits
 require_relative 'displayTitle.rb'
 require_relative 'printMenu.rb'
 require_relative 'getUserInput.rb'
@@ -20,12 +22,8 @@ else
 
     case userInput
     when 1
-      # do api call to get one random joke
-      # puts 'get joke'
       puts get_joke
-
     when 2
-      # do api call and then save to a file in current directory
       saveJoke
       system('clear')
     when 3

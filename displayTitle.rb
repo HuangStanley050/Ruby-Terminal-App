@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# Prints out the Title of the app on the terminal
 require 'tty'
 
 def displayTitle

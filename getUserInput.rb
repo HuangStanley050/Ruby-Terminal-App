@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+# Function asking user for input choices
+# The input selection is fixed based on the TTY gem setup
 require 'tty'
 
 def getUserInput

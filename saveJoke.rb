@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+# fetches the result from the chuck norris api then create a folder and save the file content
+# generate random string plus the date as the file name
 require 'httparty'
 require 'fileutils'
 require 'date'

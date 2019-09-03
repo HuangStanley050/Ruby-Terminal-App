@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require 'rspec/autorun'
-
 require '../getJoke'
 require '../saveJoke'
 

@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# Prints out a menu depicting user selection of the app in a table form
 require 'tty'
 
 def displayMenu

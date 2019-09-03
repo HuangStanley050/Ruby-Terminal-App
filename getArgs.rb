@@ -1,11 +1,12 @@
 # frozen_string_literal: true
 
+# this function runs when user inputs the argument from the CLI, either prints out the joke or save a file to local file system
+# does "some" validation only accept '-R' and '-W' in the argument, anything else it will prints out the error
 require_relative 'getJoke.rb'
 require_relative 'saveJoke.rb'
 require 'colorize'
 
 def get_arguments
-  # only do one argument for now, to get a random joke or to write to file of the random joke
   argument = ARGV[0]
   if argument != '-R' && argument != '-W'
     puts 'Invalid argument passed to the app '

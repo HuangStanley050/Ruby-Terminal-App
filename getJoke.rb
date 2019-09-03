@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+# Reaches out to external API to get a random Joke
+# displays a loading bar while we are fetching the result from TTY gem
 require 'httparty'
 require 'tty'
 require 'colorize'
