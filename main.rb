@@ -23,9 +23,11 @@ else
       # do api call to get one random joke
       # puts 'get joke'
       puts get_joke
+
     when 2
       # do api call and then save to a file in current directory
       saveJoke
+      system('clear')
     when 3
       puts 'GoodBye, thank you for using the app'
     end

@@ -23,6 +23,7 @@ def get_joke
 
   # puts hash['value']
   # puts httpStatus
+
   hash['value'].red
 end
 
