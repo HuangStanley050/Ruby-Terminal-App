@@ -73,6 +73,8 @@ Save a joke to local file system:
 
 ![random](screenshots/random.png)
 
+5. Offline support when user is not connected
+
 # Running tests
 
 ```
