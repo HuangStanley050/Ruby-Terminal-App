@@ -18,7 +18,21 @@ gem install tty
 
 ```
 
+# Running the app in production
+
+### From your shell
+
+1. > cd ruby-terminal-app
+2. > ./makeFile
+3. > cd ./dist
+4. > ruby main.rb
+
 # Running the app in development mode
+
+### From your shell
+
+1. > cd ruby-terminal-app
+2. > ruby main.rb
 
 ```
 ruby main.rb
