@@ -43,6 +43,22 @@ Get a joke:
 Save a joke to local file system:
 ![write_mode](/screenshots/cliWriteMode.png)
 
+## Features of the Application
+
+1. Fetch a random Chuck Norris joke from API and displays on Terminal.
+
+![joke](screenshots/fetchJoke.png)
+
+2. Fetch a random Chuck Norris joke and save to a folder called **"chuck_norris_jokes"** in the current directory, if it's not there it's created on the fly
+
+![folder](screenshots/folder.png)
+
+3. Run both features from above without going into the app from the CLI with appropriate argument option of either **'-R'** or **'-W'**
+
+4. Generate a random string and append the date the file is created to give unique file name
+
+![random](screenshots/random.png)
+
 # Running tests
 
 ```
