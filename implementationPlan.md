@@ -8,11 +8,11 @@
 
 |                    Task                     | Duration | Deadline   | Priority |
 | :-----------------------------------------: | -------- | ---------- | -------- |
-|        http request to external api         | unknown  | 2019-09-06 | High     |
-|         parse json result into hash         | unknown  | 2019-09-06 | High     |
-|             handle http failure             | unknown  | 2019-09-06 | Medium   |
-| fallback joke will run if http request fals | unknown  | 2019-09-06 | High     |
-|     loading bar gets displayed properly     | unknown  | 2019-09-06 | low      |
+|        http request to external api         | 120mins  | 2019-09-06 | High     |
+|         parse json result into hash         | 40mins   | 2019-09-06 | High     |
+|             handle http failure             | 60mins   | 2019-09-06 | Medium   |
+| fallback joke will run if http request fals | 50mins   | 2019-09-06 | High     |
+|     loading bar gets displayed properly     | 2mins    | 2019-09-06 | low      |
 
 ## Fetch a random Chuck Norris joke and save to a folder called **"chuck_norris_jokes"** in the current directory, if it's not there it's created on the fly
 
@@ -25,12 +25,12 @@
 
 |                    Task                     | Duration | Deadline   | Priority |
 | :-----------------------------------------: | -------- | ---------- | -------- |
-|        http request to external api         | unknown  | 2019-09-06 | High     |
-|              can handle error               | unknown  | 2019-09-06 | Medium   |
-|          can make a new directory           | unknown  | 2019-09-06 | High     |
-|        can save file into directory         | unknown  | 2019-09-06 | High     |
-|          can make unique filename           | unknown  | 2019-09-06 | low      |
-| can handle error with saving to file system | unknown  | 2019-09-06 | Medium   |
+|        http request to external api         | 20mins   | 2019-09-06 | High     |
+|              can handle error               | 30mins   | 2019-09-06 | Medium   |
+|          can make a new directory           | 5mins    | 2019-09-06 | High     |
+|        can save file into directory         | 60mins   | 2019-09-06 | High     |
+|          can make unique filename           | 10mins   | 2019-09-06 | low      |
+| can handle error with saving to file system | 20mins   | 2019-09-06 | Medium   |
 
 ## Run both features from above without going into the app from the CLI with appropriate argument option of either **'-R'** or **'-W'**
 
@@ -42,11 +42,11 @@
 
 |                  Task                  | Duration | Deadline   | Priority |
 | :------------------------------------: | -------- | ---------- | -------- |
-|      http request to external api      | unknown  | 2019-09-06 | High     |
-|  program ends after result is printed  | unknown  | 2019-09-06 | High     |
-|        handle invalid arguments        | unknown  | 2019-09-06 | low      |
-|    http request works for save joke    | unknown  | 2019-09-06 | High     |
-| checking to see if there are arguments | unknown  | 2019-09-06 | Medium   |
+|      http request to external api      | 20mins   | 2019-09-06 | High     |
+|  program ends after result is printed  | 2mins    | 2019-09-06 | High     |
+|        handle invalid arguments        | 5mins    | 2019-09-06 | low      |
+|    http request works for save joke    | 40mins   | 2019-09-06 | High     |
+| checking to see if there are arguments | 10mins   | 2019-09-06 | Medium   |
 
 ## Generate a random string and append the date the file is created to give unique file name
 
@@ -57,10 +57,10 @@
 
 |            Task            | Duration | Deadline   | Priority |
 | :------------------------: | -------- | ---------- | -------- |
-| can generate random string | unknown  | 2019-09-06 | low      |
-|    can get current date    | unknown  | 2019-09-06 | low      |
-| can format date correctly  | unknown  | 2019-09-06 | low      |
-|     can generate file      | unknown  | 2019-09-06 | High     |
+| can generate random string | 10mins   | 2019-09-06 | low      |
+|    can get current date    | 2mins    | 2019-09-06 | low      |
+| can format date correctly  | 10mins   | 2019-09-06 | low      |
+|     can generate file      | 30mins   | 2019-09-06 | High     |
 
 ## Offline support when the fetching api call fails
 
@@ -70,6 +70,6 @@
 
 |                Task                 | Duration | Deadline   | Priority |
 | :---------------------------------: | -------- | ---------- | -------- |
-|    can run if http request fails    | unknown  | 2019-09-06 | Medium   |
-| value is correct from fallback joke | unknown  | 2019-09-06 | High     |
-|   app ends after fallback is run    | unknown  | 2019-09-06 | Medium   |
+|    can run if http request fails    | 5mins    | 2019-09-06 | Medium   |
+| value is correct from fallback joke | 5mins    | 2019-09-06 | High     |
+|   app ends after fallback is run    | 10mins   | 2019-09-06 | Medium   |
