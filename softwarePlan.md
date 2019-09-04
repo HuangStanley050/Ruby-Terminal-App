@@ -55,3 +55,5 @@
   5. Offline support when the fetching api call fails
 
      > When feature one fails the default hard coded joke function will return a Chuck Norris Joke
+
+- # User interaction and Experience
