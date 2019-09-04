@@ -20,8 +20,9 @@ else
 
     displayMenu
     puts ''
-    puts ''
+    puts '************************************************'
     puts joke
+    puts '************************************************'
     userInput = getUserInput
 
     case userInput
