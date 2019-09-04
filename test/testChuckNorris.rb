@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 require 'rspec/autorun'
-require '../getJoke'
-require '../saveJoke'
+require_relative '../getJoke'
+require_relative '../saveJoke'
 
 describe 'Testing for external API call' do
   it 'should returns a string' do

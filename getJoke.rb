@@ -22,8 +22,8 @@ def get_joke
       raise if response['status'] == 404
       # lesson learned HTTParty doesn't throw error so we have to manually handle it
     rescue StandardError => e
-      puts 'Unable to fetch from API'
-      puts 'this is a default joke'
+      puts 'Unable to fetch from API, please reconnect,  Chunk Norris is waiting for you'
+      puts 'this is the default joke'
 
       return fallback_jokes.red
     end

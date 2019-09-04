@@ -77,8 +77,10 @@ Save a joke to local file system:
 
 # Running tests
 
+From the directory "ruby-terminal-app" change directory to "test"
+
 ```
-ruby ./test/testChuckNorris.rb
+ruby testChuckNorris.rb
 
 ```
 
