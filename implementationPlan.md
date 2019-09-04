@@ -6,6 +6,14 @@
 - confirm that the fallback joke will return a result once http call fails
 - confirm that the loading bar will display and finish once http fulfills request
 
+|                    Task                     | Duration | Deadline   | Priority |
+| :-----------------------------------------: | -------- | ---------- | -------- |
+|        http request to external api         | unknown  | 2019-09-06 | High     |
+|         parse json result into hash         | unknown  | 2019-09-06 | High     |
+|             handle http failure             | unknown  | 2019-09-06 | Medium   |
+| fallback joke will run if http request fals | unknown  | 2019-09-06 | High     |
+|     loading bar gets displayed properly     | unknown  | 2019-09-06 | low      |
+
 ## Fetch a random Chuck Norris joke and save to a folder called **"chuck_norris_jokes"** in the current directory, if it's not there it's created on the fly
 
 - confirm that we can make http request to api

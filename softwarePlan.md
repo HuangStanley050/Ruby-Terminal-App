@@ -77,3 +77,9 @@
 - # Control Flow Diagram
 
   ![flowChart](screenshots/flowChart.png)
+
+- # Project Management Usage
+
+  ![pictureOne](screenshots/projectManagement.png)
+
+  ![pictureTwo](screenshots/projectManagementUpdate.png)
