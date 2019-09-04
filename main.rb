@@ -8,10 +8,10 @@ require_relative 'getUserInput.rb'
 require_relative 'getJoke.rb'
 require_relative 'saveJoke.rb'
 require_relative 'getArgs.rb'
-require 'pry'
 
 userInput = nil
 displayTitle
+joke = ''
 
 if !ARGV.empty?
   get_arguments
@@ -19,11 +19,14 @@ else
   while userInput != 3
 
     displayMenu
+    puts ''
+    puts ''
+    puts joke
     userInput = getUserInput
 
     case userInput
     when 1
-      puts get_joke
+      joke = get_joke
 
     when 2
       saveJoke
@@ -31,7 +34,6 @@ else
     when 3
       puts 'GoodBye, thank you for using the app'
     end
-
-  end
+    end
 
 end

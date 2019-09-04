@@ -9,8 +9,6 @@ require_relative 'api.rb'
 require_relative 'defaultJokes.rb'
 require 'pry'
 
-def fallbackJoke; end
-
 def get_joke
   response = nil
   httpStatus = nil
@@ -36,6 +34,6 @@ def get_joke
       bar.advance(1)
     end
   end
-
+  system('clear')
   hash['value'].red
 end
