@@ -84,7 +84,7 @@ ruby ./test/testChuckNorris.rb
 
 _Testing if the external api returns a result_
 
-```
+```ruby
 describe 'Testing for external API call' do
   it 'should returns a string' do
     test_string = get_joke
@@ -97,7 +97,7 @@ end
 
 _Testing to see if a file is saved to the folder_
 
-```
+```ruby
 describe 'Testing for creating/appending a file to a named folder' do
   it 'current directory should contain a folder named "chuck_norris_jokes" and has a file inside' do
     saveJoke

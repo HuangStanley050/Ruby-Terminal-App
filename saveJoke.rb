@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 # fetches the result from the chuck norris api then create a folder and save the file content
+# if fetching fails, exit the program gracefully
 # generate random string plus the date as the file name
 require 'httparty'
 require 'fileutils'
@@ -40,7 +41,7 @@ def saveJoke
     File.open(save_string, 'w') do |f|
       f.write(fileContent)
     end
-  rescue StandardError
+  rescue Exception
     puts 'Saving to local filesystem has failed, please try again!!'
     return
   end
