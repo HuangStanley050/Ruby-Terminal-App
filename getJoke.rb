@@ -6,17 +6,24 @@ require 'httparty'
 require 'tty'
 require 'colorize'
 require_relative 'api.rb'
+require_relative 'defaultJokes.rb'
 
 def get_joke
   response = nil
   httpStatus = nil
   hash = nil
+  joke_to_return = ''
   bar = TTY::ProgressBar.new('Fetching joke.. [:bar]', total: 50)
 
   until httpStatus
-    response = HTTParty.get(CHUCK_NORRIS_URL)
+    begin # handing error if API calls fails
+      response = HTTParty.get(CHUCK_NORRIS_URL)
+    rescue StandardError
+      joke_to_return = fallback_jokes.red
+    end
     httpStatus = response.code
     hash = response.parsed_response
+    joke_to_return = hash['value'].red
     50.times do
       sleep(0.1)
       bar.advance(1)
@@ -26,7 +33,7 @@ def get_joke
   # puts hash['value']
   # puts httpStatus
 
-  hash['value'].red
+  joke_to_return
 end
 
 # get_joke

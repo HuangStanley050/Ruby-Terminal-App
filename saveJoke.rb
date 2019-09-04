@@ -29,7 +29,11 @@ def saveJoke
 
   save_string = 'chuck_norris_jokes/' + fileName
 
-  File.open(save_string, 'w') do |f|
-    f.write(fileContent)
+  begin
+    File.open(save_string, 'w') do |f|
+      f.write(fileContent)
+    end
+  rescue StandardError
+    puts 'Saving to local filesystem has failed, please try again!!'
   end
 end
