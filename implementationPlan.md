@@ -17,10 +17,21 @@
 
 ## Run both features from above without going into the app from the CLI with appropriate argument option of either **'-R'** or **'-W'**
 
-- confirm http call request works for both get joke and save joke
+- confirm http call request works for both get joke
 - confirm program ends after result is printed on screen
 - confirm we can handle invalid argument
+- confirm http call works for save joke
+- checking to see if there's any argument
 
 ## Generate a random string and append the date the file is created to give unique file name
 
+- confirm we can generate a random string
+- confirm we can get the current date
+- confirm we can format the date correctly
+- confirm we can pass in the string to the File class to generate the file
+
 ## Offline support when the fetching api call fails
+
+- confirm that the fallback function runs if fetch api calls fails
+- confirm that the value is correct from the hard coded jokes
+- confirm that app ends after the result is printed
