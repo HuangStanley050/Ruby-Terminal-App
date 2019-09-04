@@ -14,10 +14,17 @@ def saveJoke
   fileName = ''
 
   directoryName = 'chuck_norris_jokes'
-  response = HTTParty.get(CHUCK_NORRIS_URL)
-  hash = response.parsed_response
 
-  fileContent = hash['value']
+  begin
+    response = HTTParty.get(CHUCK_NORRIS_URL)
+    hash = response.parsed_response
+    fileContent = hash['value']
+    raise if response['status'] == 404
+  rescue StandardError
+    puts 'Unable to save file '
+    puts 'Please try again'
+    return
+  end
 
   d = DateTime.now
   time = d.strftime('%a %d %b %Y')
