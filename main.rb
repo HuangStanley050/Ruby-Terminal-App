@@ -8,6 +8,7 @@ require_relative 'getUserInput.rb'
 require_relative 'getJoke.rb'
 require_relative 'saveJoke.rb'
 require_relative 'getArgs.rb'
+require 'pry'
 
 userInput = nil
 displayTitle
@@ -23,6 +24,7 @@ else
     case userInput
     when 1
       puts get_joke
+
     when 2
       saveJoke
       system('clear')

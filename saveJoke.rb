@@ -35,5 +35,6 @@ def saveJoke
     end
   rescue StandardError
     puts 'Saving to local filesystem has failed, please try again!!'
+    return
   end
 end
