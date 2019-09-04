@@ -57,3 +57,23 @@
      > When feature one fails the default hard coded joke function will return a Chuck Norris Joke
 
 - # User interaction and Experience
+
+  - User will find out how to interact with the app by again going through the documentation provided in README.md
+
+  - In the README, there are features listed for the app for user to try it out along with screenshots when they are using each features.
+
+  - User will interact with the features either by selecting a predetermined options or use a valid argument flags for the main application from the terminal.
+
+  - Error handling will be in three main areas: **get a joke** **save to file** and **wrong command line arguments**
+
+    1.  if the get joke feature fails, a fallback joke will be provided so user won't see any error messages.
+
+    2.  if the save file feature fails, user will get an message on the screen indicating that it failed.
+
+    3.  if user enters the wrong argument on the command line, error will be shown like this:
+
+    ![error](screenshots/invalidCommand.png)
+
+- # Control Flow Diagram
+
+  ![flowChart](screenshots/flowChart.png)
