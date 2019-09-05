@@ -35,5 +35,5 @@ def get_joke
     end
   end
   system('clear')
-  hash['value'].red
+  hash['value']
 end

@@ -6,6 +6,7 @@
 require 'httparty'
 require 'fileutils'
 require 'date'
+require 'tty'
 require_relative 'api.rb'
 
 def saveJoke
@@ -13,16 +14,21 @@ def saveJoke
   httpStatus = nil
   hash = nil
   fileName = ''
-
+  bar = TTY::ProgressBar.new('Saving joke.. [:bar]', total: 50)
   directoryName = 'chuck_norris_jokes'
+
+  50.times do
+    sleep(0.1)
+    bar.advance(1)
+  end
 
   begin
     response = HTTParty.get(CHUCK_NORRIS_URL)
     hash = response.parsed_response
     fileContent = hash['value']
     raise if response['status'] == 404
-  rescue StandardError
-    puts 'Unable to save file '
+  rescue StandardError => e
+    puts 'Unable to save file, Chuck Norris is disapponted '
     puts 'Please try again'
     return
   end
@@ -45,4 +51,6 @@ def saveJoke
     puts 'Saving to local filesystem has failed, please try again!!'
     return
   end
+  system('clear')
+  'Joke has been saved.'
 end

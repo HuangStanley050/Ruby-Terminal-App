@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# Test for two features in the app
 require 'rspec/autorun'
 require_relative '../getJoke'
 require_relative '../saveJoke'

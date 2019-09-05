@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 # Run this function if API fetch fails
-require 'colorize'
 
 def fallback_jokes
   fallbackJokes = [

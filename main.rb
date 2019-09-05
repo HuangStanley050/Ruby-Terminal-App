@@ -11,7 +11,7 @@ require_relative 'getArgs.rb'
 
 userInput = nil
 displayTitle
-joke = ''
+output = ''
 
 if !ARGV.empty?
   get_arguments
@@ -21,16 +21,16 @@ else
     displayMenu
     puts ''
     puts '************************************************'
-    puts joke
+    puts output
     puts '************************************************'
     userInput = getUserInput
 
     case userInput
     when 1
-      joke = get_joke
+      output = get_joke
 
     when 2
-      saveJoke
+      output = saveJoke
       system('clear')
     when 3
       puts 'GoodBye, thank you for using the app'
