@@ -9,8 +9,8 @@ require 'colorize'
 def get_arguments
   argument = ARGV[0]
   if argument != '-R' && argument != '-W'
-    puts 'Invalid argument passed to the app '
-    puts "you have typed invalid command: ruby #{$PROGRAM_NAME} #{argument}"
+    puts 'Invalid argument passed to the app'.red
+    puts "you have typed invalid command: ruby #{$PROGRAM_NAME} #{argument}".colorize(color: :white, background: :red)
     puts '=================================='
     puts 'Example of usage: '
     puts 'ruby main.rb -W'.yellow
