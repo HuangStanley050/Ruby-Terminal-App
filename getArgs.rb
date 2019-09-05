@@ -18,5 +18,5 @@ def get_arguments
     puts '=================================='
   end
   puts get_joke if argument == '-R'
-  saveJoke if argument == '-W'
+  puts saveJoke if argument == '-W'
 end

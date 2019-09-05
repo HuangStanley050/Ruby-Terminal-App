@@ -10,10 +10,6 @@ require 'tty'
 require_relative 'api.rb'
 
 def saveJoke
-  response = nil
-  httpStatus = nil
-  hash = nil
-  fileName = ''
   bar = TTY::ProgressBar.new('Saving joke.. [:bar]', total: 50)
   directoryName = 'chuck_norris_jokes'
 
@@ -27,7 +23,7 @@ def saveJoke
     hash = response.parsed_response
     fileContent = hash['value']
     raise if response['status'] == 404
-  rescue StandardError => e
+  rescue StandardError
     puts 'Unable to save file, Chuck Norris is disapponted '
     puts 'Please try again'
     return
@@ -47,7 +43,7 @@ def saveJoke
     File.open(save_string, 'w') do |f|
       f.write(fileContent)
     end
-  rescue Exception
+  rescue StandardError
     puts 'Saving to local filesystem has failed, please try again!!'
     return
   end

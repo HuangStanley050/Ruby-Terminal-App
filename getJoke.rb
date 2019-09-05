@@ -21,10 +21,10 @@ def get_joke
       response = HTTParty.get(CHUCK_NORRIS_URL)
       raise if response['status'] == 404
       # lesson learned HTTParty doesn't throw error so we have to manually handle it
-    rescue StandardError => e
+    rescue StandardError
+      system('clear')
       puts 'Unable to fetch from API, please reconnect,  Chunk Norris is waiting for you'
       puts 'this is the default joke'
-
       return fallback_jokes.red
     end
     httpStatus = response.code

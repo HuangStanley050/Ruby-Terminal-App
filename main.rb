@@ -35,6 +35,6 @@ else
     when 3
       puts 'GoodBye, thank you for using the app'
     end
-    end
+  end
 
 end
