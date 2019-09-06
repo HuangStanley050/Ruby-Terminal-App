@@ -115,3 +115,7 @@ end
 # Author
 
 - **Stanley Huang**
+
+# Link to github
+
+[Link to github](https://github.com/HuangStanley050/Ruby-Terminal-App)
