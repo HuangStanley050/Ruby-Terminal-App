@@ -29,7 +29,7 @@ header {
 }
 
 .mainScreen {
-  background-image: url("/screenshots/mainScreen.png");
+  background-image: url("mainScreen.png");
   height: 550px;
 }
 
