@@ -22,10 +22,10 @@
         <ul class="navbar-nav ml-auto">
 
           <li class="nav-item">
-            <a class="nav-link nav-link-style" href="#">Features</a>
+            <a class="nav-link nav-link-style" href="#app-features">Features</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-link-style" href="#">Contact</a>
+            <a class="nav-link nav-link-style" href="#app-contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -39,10 +39,10 @@
       </div>
 
       <div class="mainScreen"></div>
-      <h1 class='text-center'>Features:
+      <h1 class='text-center mt-3'>Features:
       </h1>
       <div class='container'>
-        <div class="row features">
+        <div id="app-features" class="row features">
 
           <div class='col-xs-12 col-sm-6'>
             <div class="card card-style">
@@ -50,7 +50,7 @@
               <div class="card-body">
                 <h5 class="card-title text-center">Fetch Joke</h5>
                 <p class="card-text text-center">API fetch Chuck Norris Joke</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a target="_blank" href="https://github.com/HuangStanley050/Ruby-Terminal-App" class="btn btn-primary">Github</a>
               </div>
             </div>
           </div>
@@ -63,26 +63,42 @@
               <div class="card-body">
                 <h5 class="card-title text-center">Save Joke</h5>
                 <p class="card-text text-center">Write Chuck Norris joke to local filesystem.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a target="_blank" href="https://github.com/HuangStanley050/Ruby-Terminal-App" class="btn btn-primary">Github</a>
               </div>
             </div>
           </div>
           <div class='col-xs-12 col-sm-6 offset-md-3'>
             <div class="card card-style">
-              <img src="..." class="card-img-top" alt="...">
+              <img src="https://cdn.editorchoice.com/wp-content/uploads/2019/07/Chuck-Norris.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title text-center">ShortCut</h5>
                 <p class="card-text text-center">Fetching and Saving Jokes without going into the menu mode</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a target="_blank" href="https://github.com/HuangStanley050/Ruby-Terminal-App" class="btn btn-primary">Github</a>
               </div>
             </div>
           </div>
 
         </div>
       </div>
+      <h1 class='text-center mt-3'>Contact Form</h1>
+      <div id="app-contact" class='container mt-3 mb-4'>
+        <div class='row'>
+          <div class="col-xs-12 col-sm-6 offset-sm-3">
+            <form id='form'>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input id="exampleInputEmail1" type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
 
-      <div class='row'>
-        <h1 >Contact form here</h1>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
 
