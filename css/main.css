@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Slabo , serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+header {
+  background-color: blue !important;
+}
+
+.nav-link-style {
+  font-size: 1.5rem;
+  color: white !important;
+}
+
+.hero-background {
+  background-color: blue;
+}
+
+.container {
+  margin-top: 1rem;
+}
